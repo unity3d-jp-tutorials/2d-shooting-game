@@ -1,4 +1,4 @@
-![](http://japan.unity3d.com/developer/document/tutorial/2d-shooting-game/img/top_thumb_game_04.png)
+![](images/_Sidebar/thumb.png)
 
 [[このチュートリアルを始める前に]]
 
