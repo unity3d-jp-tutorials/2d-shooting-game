@@ -1,4 +1,4 @@
-![](images/_Sidebar/thumb.png)
+[[images/_Sidebar/thumb.png]]
 
 [[このチュートリアルを始める前に]]
 
