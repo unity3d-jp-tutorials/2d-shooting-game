@@ -1,3 +1,7 @@
+![](http://unity-chan.com/contents/wp-content/uploads/2014/03/stg_tutorial1.png)
+
+[[このチュートリアルを始める前に]]
+
 ## ゲーム制作編
 
 第01回<br/>[[スプライト / スプライトアニメーションの作成]]<br/>
