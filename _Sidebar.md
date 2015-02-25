@@ -1,4 +1,4 @@
-[[images/_Sidebar/thumb.png]]
+[[[images/_Sidebar/thumb.png]]](Home)
 
 [[このチュートリアルを始める前に]]
 
