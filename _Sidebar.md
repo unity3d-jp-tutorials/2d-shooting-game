@@ -1,4 +1,4 @@
-![](https://camo.githubusercontent.com/6db979e2989b2f25197bcd3d296681f2e0336fc6/687474703a2f2f6a6170616e2e756e69747933642e636f6d2f646576656c6f7065722f646f63756d656e742f7475746f7269616c2f32642d73686f6f74696e672d67616d652f696d672f746f705f7468756d625f696e74726f2e6a7067)
+![](http://japan.unity3d.com/developer/document/tutorial/2d-shooting-game/img/top_thumb_game_04.png)
 
 [[このチュートリアルを始める前に]]
 
