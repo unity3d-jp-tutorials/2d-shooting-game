@@ -82,9 +82,9 @@ GUI**としましょう。Transformの**Positionは X 0 Y 0 Z 0**にしてくだ
 ![](images/game/12/create_score_gameobject.png)
 
 
-
-Hierarchyウィンドウの**Create**ボタンをクリックして**GUI
-Text**を選択してください。GUI
+もう一つ**空のゲームオブジェクト**を作成し、インスペクターの**Add Component**ボタンを押して**GUI
+Text**を追加してください。"GUI..."という風に名前を入力してフィルターすることも出来ます。
+これで、GUI
 Textコンポーネントが付いたゲームオブジェクトが作成されます。
 
 
@@ -262,89 +262,89 @@ using System.Collections;
 
 public class Enemy : MonoBehaviour
 {
-    // ヒットポイント
-    public int hp = 1;
-
-    // スコアのポイント
-    public int point = 100;
-
-    // Spaceshipコンポーネント
-    Spaceship spaceship;
-
-    IEnumerator Start ()
-    {
-
-        // Spaceshipコンポーネントを取得
-        spaceship = GetComponent<Spaceship> ();
-
-        // ローカル座標のY軸のマイナス方向に移動する
-        Move (transform.up * -1);
-
-        // canShotがfalseの場合、ここでコルーチンを終了させる
-        if (spaceship.canShot == false) {
-            yield break;
-        }
-
-        while (true) {
-
-            // 子要素を全て取得する
-            for (int i = 0; i < transform.childCount; i++) {
-
-                Transform shotPosition = transform.GetChild (i);
-
-                // ShotPositionの位置/角度で弾を撃つ
-                spaceship.Shot (shotPosition);
-            }
-
-            // shotDelay秒待つ
-            yield return new WaitForSeconds (spaceship.shotDelay);
-        }
-    }
-
-    // 機体の移動
-    public void Move (Vector2 direction)
-    {
-        rigidbody2D.velocity = direction * spaceship.speed;
-    }
-
-    void OnTriggerEnter2D (Collider2D c)
-    {
-        // レイヤー名を取得
-        string layerName = LayerMask.LayerToName (c.gameObject.layer);
-
-        // レイヤー名がBullet (Player)以外の時は何も行わない
-        if (layerName != "Bullet (Player)") return;
-
-        // PlayerBulletのTransformを取得
-        Transform playerBulletTransform = c.transform.parent;
-
-        // Bulletコンポーネントを取得
-        Bullet bullet =  playerBulletTransform.GetComponent<Bullet>();
-
-        // ヒットポイントを減らす
-        hp = hp - bullet.power;
-
-        // 弾の削除
-        Destroy(c.gameObject);
-
-        // ヒットポイントが0以下であれば
-        if(hp <= 0 )
-        {
-            // スコアコンポーネントを取得してポイントを追加
-            FindObjectOfType<Score>().AddPoint(point);
-
-            // 爆発
-            spaceship.Explosion ();
-
-            // エネミーの削除
-            Destroy (gameObject);
-
-        }else{
-
-            spaceship.GetAnimator().SetTrigger("Damage");
-
-        }
-    }
+	// ヒットポイント
+	public int hp = 1;
+	
+	// スコアのポイント
+	public int point = 100;
+	
+	// Spaceshipコンポーネント
+	Spaceship spaceship;
+	
+	IEnumerator Start ()
+	{
+		
+		// Spaceshipコンポーネントを取得
+		spaceship = GetComponent<Spaceship> ();
+		
+		// ローカル座標のY軸のマイナス方向に移動する
+		Move (transform.up * -1);
+		
+		// canShotがfalseの場合、ここでコルーチンを終了させる
+		if (spaceship.canShot == false) {
+			yield break;
+		}
+		
+		while (true) {
+			
+			// 子要素を全て取得する
+			for (int i = 0; i < transform.childCount; i++) {
+				
+				Transform shotPosition = transform.GetChild (i);
+				
+				// ShotPositionの位置/角度で弾を撃つ
+				spaceship.Shot (shotPosition);
+			}
+			
+			// shotDelay秒待つ
+			yield return new WaitForSeconds (spaceship.shotDelay);
+		}
+	}
+	
+	// 機体の移動
+	public void Move (Vector2 direction)
+	{
+		GetComponent<Rigidbody2D>().velocity = direction * spaceship.speed;
+	}
+	
+	void OnTriggerEnter2D (Collider2D c)
+	{
+		// レイヤー名を取得
+		string layerName = LayerMask.LayerToName (c.gameObject.layer);
+		
+		// レイヤー名がBullet (Player)以外の時は何も行わない
+		if (layerName != "Bullet (Player)") return;
+		
+		// PlayerBulletのTransformを取得
+		Transform playerBulletTransform = c.transform.parent;
+		
+		// Bulletコンポーネントを取得
+		Bullet bullet =  playerBulletTransform.GetComponent<Bullet>();
+		
+		// ヒットポイントを減らす
+		hp = hp - bullet.power;
+		
+		// 弾の削除
+		Destroy(c.gameObject);
+		
+		// ヒットポイントが0以下であれば
+		if(hp <= 0 )
+		{
+			// スコアコンポーネントを取得してポイントを追加
+			FindObjectOfType<Score>().AddPoint(point);
+			
+			// 爆発
+			spaceship.Explosion ();
+			
+			// エネミーの削除
+			Destroy (gameObject);
+			
+		}else{
+			
+			spaceship.GetAnimator().SetTrigger("Damage");
+			
+		}
+	}
 }
 ```
 
