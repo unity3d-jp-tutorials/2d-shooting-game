@@ -31,7 +31,7 @@ Waveプレハブをスクリプトから作成します。
 
 Emitter.cs
 
-```cs
+```csharp
 using UnityEngine;
 using System.Collections;
 

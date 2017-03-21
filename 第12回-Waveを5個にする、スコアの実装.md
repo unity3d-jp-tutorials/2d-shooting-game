@@ -159,7 +159,7 @@ Size**を図12.1と図12.2を見ながら設定しましょう。
 
 Score.cs
 
-```cs
+```csharp
 using UnityEngine;
 
 public class Score : MonoBehaviour
@@ -256,7 +256,7 @@ GUIText**に**Score**ゲームオブジェクトと**HighScore**ゲームオブ�
 
 Enemy.cs
 
-```cs
+```csharp
 using UnityEngine;
 using System.Collections;
 
@@ -391,7 +391,7 @@ Manager.csのGameOverメソッドに追記します。
 
 Manager.cs
 
-```cs
+```csharp
 using UnityEngine;
 
 public class Manager : MonoBehaviour
