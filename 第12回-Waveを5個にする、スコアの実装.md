@@ -2,7 +2,7 @@
 
 
 
-![](images/game/12/finish_1.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/finish_1.png)
 
 
 
@@ -11,7 +11,7 @@
 
 Waveをさらに4つ増やします。[第07回](./07.html)で作成したWaveプレハブを複製したものを改良していきます。Waveのエネミーの配置は同じにしなくても問題ありません。例として4つのWaveを紹介します。
 
-[Wave.unitypackageをダウンロード](project/Wave.unitypackage)
+[Wave.unitypackageをダウンロード](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/project/Wave.unitypackage)
 
 ### Wave 2
 
@@ -19,7 +19,7 @@ Waveをさらに4つ増やします。[第07回](./07.html)で作成したWave�
 
 
 
-![](images/game/12/wave_2.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/wave_2.png)
 
 
 
@@ -29,7 +29,7 @@ Waveをさらに4つ増やします。[第07回](./07.html)で作成したWave�
 
 
 
-![](images/game/12/wave_3.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/wave_3.png)
 
 
 
@@ -39,7 +39,7 @@ Waveをさらに4つ増やします。[第07回](./07.html)で作成したWave�
 
 
 
-![](images/game/12/wave_4.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/wave_4.png)
 
 
 
@@ -49,7 +49,7 @@ Waveをさらに4つ増やします。[第07回](./07.html)で作成したWave�
 
 
 
-![](images/game/12/wave_5.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/wave_5.png)
 
 
 
@@ -57,7 +57,7 @@ Waveをさらに4つ増やします。[第07回](./07.html)で作成したWave�
 
 
 
-![](images/game/12/drag_emitter.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/drag_emitter.png)
 
 
 
@@ -79,7 +79,7 @@ GUI**としましょう。Transformの**Positionは X 0 Y 0 Z 0**にしてくだ
 
 
 
-![](images/game/12/create_score_gameobject.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/create_score_gameobject.png)
 
 
 もう一つ**空のゲームオブジェクト**を作成し、インスペクターの**Add Component**ボタンを押して**GUI
@@ -89,7 +89,7 @@ Textコンポーネントが付いたゲームオブジェクトが作成され�
 
 
 
-![](images/game/12/create_guitext.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/create_guitext.png)
 
 
 
@@ -98,7 +98,7 @@ GUI**の子要素とします。そして、名前を**Score**と**HighScore**�
 
 
 
-![](images/game/12/rename.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/rename.png)
 
 
 
@@ -110,14 +110,14 @@ Size**を図12.1と図12.2を見ながら設定しましょう。
 
 
 
-![](images/game/12/score.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/score.png)
 <br/>図12.1:
 
 
 
 
 
-![](images/game/12/highscore.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/highscore.png)
 <br/>図12.2:
 
 
@@ -128,7 +128,7 @@ Size**を図12.1と図12.2を見ながら設定しましょう。
 
 
 
-![](images/game/12/correct_view.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/correct_view.png)
 <br/>図12.3:
 
 
@@ -139,7 +139,7 @@ Size**を図12.1と図12.2を見ながら設定しましょう。
 
 
 
-![](images/game/12/create_score_script.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/create_score_script.png)
 
 
 
@@ -232,7 +232,7 @@ GUI**ゲームオブジェクトにドラッグ＆ドロップしてください
 
 
 
-![](images/game/12/drag_score_script.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/drag_score_script.png)
 
 
 
@@ -241,7 +241,7 @@ GUIText**に**Score**ゲームオブジェクトと**HighScore**ゲームオブ�
 
 
 
-![](images/game/12/drag_score_and_highscore.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/drag_score_and_highscore.png)
 
 
 
@@ -356,19 +356,19 @@ public class Enemy : MonoBehaviour
 
 
 
-![](images/game/12/point_100.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/point_100.png)
 
 
 
 
 
-![](images/game/12/point_200.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/point_200.png)
 
 
 
 
 
-![](images/game/12/point_2000.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/point_2000.png)
 
 
 
@@ -378,7 +378,7 @@ public class Enemy : MonoBehaviour
 
 
 
-![](images/game/12/finish_2.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/12/finish_2.png)
 
 
 
@@ -448,4 +448,4 @@ public class Manager : MonoBehaviour
 
 今回はここで終了です。つまずいてしまった方はプロジェクトファイルをダウンロードして新たな気持ちで次の回へ進みましょう。
 
-[今回のプロジェクトファイルをダウンロード](project/game_12_ShootingGame.zip)
+[今回のプロジェクトファイルをダウンロード](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/project/game_12_ShootingGame.zip)

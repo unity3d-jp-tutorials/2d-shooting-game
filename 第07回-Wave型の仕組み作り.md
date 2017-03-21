@@ -1,6 +1,6 @@
 
 
-![](images/game/07/wave.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/07/wave.png)
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-![](images/game/07/create_wave.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/07/create_wave.png)
 <br/>図7.1:
 
 
@@ -85,7 +85,7 @@ EmitterゲームオブジェクトにEmitter.csをアタッチし、Waveプレ�
 
 
 
-![](images/game/07/emitter_inspector.png)
+![](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/07/emitter_inspector.png)
 <br/>図7.2:
 
 
@@ -95,7 +95,7 @@ EmitterゲームオブジェクトにEmitter.csをアタッチし、Waveプレ�
 
 
 
-![弾が多く敵を倒せない場合はWaveプレハブにあるEnemyのCanShotのチェックを外してください](images/game/07/play.png)
+![弾が多く敵を倒せない場合はWaveプレハブにあるEnemyのCanShotのチェックを外してください](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/images/game/07/play.png)
 <br/>図7.3:
 弾が多く敵を倒せない場合はWaveプレハブにあるEnemyのCanShotのチェックを外してください
 
@@ -105,4 +105,4 @@ EmitterゲームオブジェクトにEmitter.csをアタッチし、Waveプレ�
 
 今回はここで終了です。つまずいてしまった方はプロジェクトファイルをダウンロードして新たな気持ちで次の回へ進みましょう。
 
-[今回のプロジェクトファイルをダウンロード](project/game_07_ShootingGame.zip)
+[今回のプロジェクトファイルをダウンロード](http://unity3d.com-jp-learn-tutorials.s3.amazonaws.com/2d-shooting-game/project/game_07_ShootingGame.zip)
