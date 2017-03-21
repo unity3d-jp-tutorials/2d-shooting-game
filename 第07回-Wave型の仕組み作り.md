@@ -95,9 +95,9 @@ EmitterゲームオブジェクトにEmitter.csをアタッチし、Waveプレ�
 
 
 
-![弾が多く敵を倒せない場合はWaveプレハブにあるEnemyのCanShotのチェックを外そう](images/game/07/play.png)
+![弾が多く敵を倒せない場合はWaveプレハブにあるEnemyのCanShotのチェックを外してください](images/game/07/play.png)
 <br/>図7.3:
-弾が多く敵を倒せない場合はWaveプレハブにあるEnemyのCanShotのチェックを外そう
+弾が多く敵を倒せない場合はWaveプレハブにあるEnemyのCanShotのチェックを外してください
 
 
 
